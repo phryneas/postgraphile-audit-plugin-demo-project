@@ -1,0 +1,14 @@
+{
+  "name": "berlin-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "postgraphile": "^4.5.5",
+    "postgraphile-audit-plugin": "^1.0.1"
+  },
+  "scripts": {
+    "pg": "postgraphile --connection=postgres://postgres@localhost:54321/postgres --enhance-graphiql",
+    "pg-audit": "yarn pg --append-plugins postgraphile-audit-plugin"
+  }
+}
