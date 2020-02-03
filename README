@@ -1,0 +1,10 @@
+docker-compose up -d
+psql -h localhost -p 54321 -U postgres -d postgres -f example-database.sql
+yarn pg
+
+cd pgMemento
+psql -h localhost -p 54321 -U postgres -d postgres -f INSTALL_PGMEMENTO.sql
+psql -h localhost -p 54321 -U postgres -d postgres -f INIT.sql
+cd ..
+psql -h localhost -p 54321 -U postgres -d postgres -f Setup.sql
+yarn pg-audit

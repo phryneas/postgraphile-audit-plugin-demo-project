@@ -1,6 +1,4 @@
-DROP TABLE IF EXISTS public.comments;
-DROP TABLE IF EXISTS public.posts;
-DROP TABLE IF EXISTS public.users;
+
 
 CREATE TABLE public.users (
 	id SERIAL PRIMARY KEY,
