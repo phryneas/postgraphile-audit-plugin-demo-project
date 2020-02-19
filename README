@@ -1,10 +1,27 @@
+git clone repo
+git submodule init
+git submodule update
+
 docker-compose up -d
+yarn install
+
 psql -h localhost -p 54321 -U postgres -d postgres -f example-database.sql
+
+-> package.json zeigen
+
 yarn pg
 
 cd pgMemento
 psql -h localhost -p 54321 -U postgres -d postgres -f INSTALL_PGMEMENTO.sql
 psql -h localhost -p 54321 -U postgres -d postgres -f INIT.sql
+
+yarn pg
+
 cd ..
 psql -h localhost -p 54321 -U postgres -d postgres -f Setup.sql
+
+yarn pg
+-> package.json zeigen
+
+
 yarn pg-audit
