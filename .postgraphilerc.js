@@ -2,10 +2,10 @@
  * @type {import("./src").AuditPluginOptions}
  */
 const auditPlugin = {
-  //auditEventConnection: false,
-  firstLastAuditEvent: false,
-  //dateProps: false,
-  //nameProps: false,
+  auditEventConnection: true,
+  firstLastAuditEvent: true,
+  dateProps: true,
+  nameProps: true,
   nameSource: "session_info",
   nameSessionInfoJsonPath: "{userId}"
 };

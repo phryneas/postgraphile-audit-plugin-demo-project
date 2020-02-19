@@ -8,7 +8,7 @@
     "postgraphile-audit-plugin": "^1.0.1"
   },
   "scripts": {
-    "pg": "postgraphile --connection=postgres://postgres@localhost:54321/postgres --enhance-graphiql",
+    "pg": "postgraphile --connection=postgres://postgres@localhost:54321/postgres --enhance-graphiql --allow-explain",
     "pg-audit": "yarn pg --append-plugins postgraphile-audit-plugin"
   }
 }
